@@ -34,7 +34,7 @@
           "apt-get install unzip -y",
           "unzip -jq /tmp/consul-template.zip",
           "unzip -jq /tmp/nomad.zip",
-          "apt-get autoremove --purge unzip",
+          "apt-get autoremove --purge unzip -y",
           "rm /tmp/consul-template.zip",
           "rm /tmp/nomad.zip",
           "chmod +x /usr/bin/nomad",
