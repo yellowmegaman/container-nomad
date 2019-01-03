@@ -17,7 +17,7 @@
       "type": "docker",
       "commit": true,
       "image": "{{user `from_image`}}",
-      "run_command": ["-dit", "--net=host", "{{.Image}}", "/bin/ash"],
+      "run_command": ["-dit", "--net=host", "{{.Image}}", "/bin/bash"],
       "changes": [
         "ENTRYPOINT [\"/usr/bin/nomad\"]"
       ]
