@@ -5,7 +5,7 @@ Can be used for templated remote nomad deploys.
 
 Example usage:
 ```
-docker run -it sullen/nomad-consul-template:latest ash
+docker run -it yellowmegaman/container-nomad:latest bash
 $ consul-template -consul-addr=$TARGET:8500 -once -template job.teplate:job.rendered
 $ nomad plan -address=http://$TARGET:4646 job.rendered
 $ nomad run -address=http://$TARGET:4646 job.rendered
